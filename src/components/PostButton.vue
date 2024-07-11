@@ -3,6 +3,7 @@
 </Template>
 
 <Script lang="ts" setup>
+    
 </Script>
 <style scoped>
 .post-btn {
