@@ -1,4 +1,5 @@
 <template> 
+<Header></Header>
     <div class = "container">
         <BarraLateral></BarraLateral>
         <div class="content">
@@ -8,11 +9,14 @@
     </div>
 </template>
 <script setup>
-import BarraLateral from '../components/BarraLateral.vue'
+import BarraLateral from '../components/BarraLateral.vue';
+import Header from '../components/Header.vue';
 </script>
 <style>
 .container {
     display:flex;
+    background: #fff;
+    color: black;
 
 }
 .content {
