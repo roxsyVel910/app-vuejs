@@ -1,8 +1,10 @@
 <template> 
-<Header></Header>
+<Header :mensaje="texto"></Header>
     <div class = "container">
         <BarraLateral></BarraLateral>
         <div class="content">
+            <input type="text" v-model="texto">
+            {{ texto }}
             <router-view></router-view>
         </div>
 
@@ -11,6 +13,9 @@
 <script setup>
 import BarraLateral from '../components/BarraLateral.vue';
 import Header from '../components/Header.vue';
+import {ref} from 'vue';
+
+const texto = ref('');
 </script>
 <style>
 .container {
